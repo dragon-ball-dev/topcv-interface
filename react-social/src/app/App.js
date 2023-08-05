@@ -241,8 +241,8 @@ class App extends Component {
             <AppHeader authenticated={this.state.authenticated} roleName={this.state.role} onLogout={this.handleLogout} />
           ) : ""}
           <Switch>
-            <Route exact path="/" component={Home}></Route>
             <Route exact path="/job-list" component={JobList}></Route>
+            <Route exact path="/" component={Home}></Route>
             <Route exact path="/advertisement" component={Advertisement}></Route>
             <Route exact path="/contact" component={Contact}></Route>
             <Route exact path="/job-detail/:id"
